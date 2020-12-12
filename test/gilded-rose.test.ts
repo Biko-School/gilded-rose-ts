@@ -46,7 +46,7 @@ describe("Gilded Rose", function () {
     expect(items[0].quality).toBeLessThanOrEqual(50);
   });
     
-  it(" if item is Sulfuras quality and sellin date should not change", function () {
+  it("If item is Sulfuras quality and sellin date should not change", function () {
     const gildedRose = new GildedRose([new Item("Sulfuras, Hand of Ragnaros", 1, 5)]);
     const items = gildedRose.updateQuality();
     expect(items[0].sellIn).toEqual(1);
